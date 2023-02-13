@@ -1,0 +1,17 @@
+input_shape: 224
+image_channels: 3
+include_top: False
+num_classes: 4
+sub_architecture_class: none
+architecture: EfficientNetB4
+algorithm: training
+project_name: multi_classifier
+data_set_name:   sampledata
+learning_rate: 0.001
+lr_min_range: 1e-11
+lr_max_range: 0.001
+steps : 1024
+epochs: 48
+batch_size: 8
+patience: 5
+gpus: 0,1
